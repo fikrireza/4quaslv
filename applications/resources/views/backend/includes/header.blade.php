@@ -9,20 +9,20 @@
       <ul class="nav navbar-nav navbar-right">
         <li class="">
           <a href="javascript:;" class="user-profile dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
-            <img src="{{ asset('images/users').'/'.Auth::user()->avatar }}" alt="">{{ Auth::user()->name }}
+            <img src="{{ asset('images/users/userdefault.png') }}" alt="">Kampang
             <span class=" fa fa-angle-down"></span>
           </a>
           <ul class="dropdown-menu dropdown-usermenu pull-right">
-            <li><a href="{{ route('profile.index') }}"> Profile</a></li>
+            <li><a href=""> Profile</a></li>
             <li><a href="{{ route('logout') }}"><i class="fa fa-sign-out pull-right"></i> Log Out</a></li>
           </ul>
         </li>
 
-        @if ($getNotifInbox)
+        {{-- @if ($getNotifInbox)
         <li role="presentation" class="dropdown">
           <a href="javascript:;" class="dropdown-toggle info-number" data-toggle="dropdown" aria-expanded="false">
             <i class="fa fa-envelope-o"></i>
-            <span class="badge bg-green">{{ $getNotifInbox->count() }}</span>
+            <span class="badge bg-green">0</span>
           </a>
           <ul id="menu1" class="dropdown-menu list-unstyled msg_list" role="menu">
             @foreach ($getNotifInbox as $key)
@@ -51,7 +51,7 @@
             </li>
           </ul>
         </li>
-        @endif
+        @endif --}}
       </ul>
     </nav>
   </div>

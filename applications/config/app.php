@@ -190,15 +190,13 @@ return [
         App\Providers\EventServiceProvider::class,
         App\Providers\RouteServiceProvider::class,
 
-		
+
         // Tag HTML providers
         Collective\Html\HtmlServiceProvider::class,
         // Manipulate Images
         Intervention\Image\ImageServiceProvider::class,
         // Yajra Datatables
         Yajra\Datatables\DatatablesServiceProvider::class,
-        // Google Analytics
-        Spatie\Analytics\AnalyticsServiceProvider::class,
     ],
 
     /*

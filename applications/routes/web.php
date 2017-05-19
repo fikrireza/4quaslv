@@ -23,6 +23,7 @@ Route::get('admin/login', 'Auth\LoginController@showLoginForm')->name('login.pag
 Route::get('admin/verify/{confirmation_code}', 'Backend\UserController@verify')->name('verify.index')->middleware('guest');
 Route::post('admin/verify', 'Backend\UserController@store')->name('verify.store');
 
+Route::get('admin/dashboard', 'Backend\DashboardController@index')->name('admin.dashboard');
 //----------------------- BACKEND -----------------------//
 Route::group(['middleware' => ['isAdministrator']], function () {
 
